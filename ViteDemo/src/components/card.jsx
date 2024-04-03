@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({username = "Potato",text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?", link="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" ,btnText = "View Profile"}) { // <------ default values can be set here
+function Card({username = "Potato",text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?", link="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" ,btnText = "View Profile", btnLink}) { // <------ default values can be set here
 
 
 
@@ -8,7 +8,7 @@ function Card({username = "Potato",text = "Lorem ipsum dolor sit amet consectetu
 
     return(
         <>
-             <div className="relative h-[400px] w-[300px] rounded-md mb-3">
+             <div className="relative h-[400px] w-[300px] rounded-md m-2">
                 <img
                     src={link}
                     alt="AirMax Pro"
@@ -20,9 +20,12 @@ function Card({username = "Potato",text = "Lorem ipsum dolor sit amet consectetu
                     <p className="mt-2 text-sm text-gray-300">
                     {text}
                     </p>
-                    <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-black bg-white border border-b-neutral-700 p-2 rounded-xl ">
-                    {btnText} &rarr;
-                    </button>
+                    <a href={btnLink}>
+                        <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-black bg-white border border-b-neutral-700 p-2 rounded-xl ">
+                        {btnText} &rarr;
+                        </button>
+                    </a>
+                    
                 </div>
             </div>
 
