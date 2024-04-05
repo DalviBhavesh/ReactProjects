@@ -20,7 +20,7 @@ function App() {
 
             <Card title="Convert From" display="INR" countryCode='in'/>
             
-            <div className='absolute lg:top-32 top-28 h-10 w-60 bg-blue-600 hover:bg-blue-700 text-white rounded-xl border border-white  flex flex-col justify-center items-center'>
+            <div className='absolute lg:bottom-48 bottom-48 h-10 w-60 bg-blue-600 hover:bg-blue-700 text-white rounded-xl border border-white  flex flex-col justify-center items-center'>
               <span className='text-3xl'><TbMobiledata /></span>
             </div>
 

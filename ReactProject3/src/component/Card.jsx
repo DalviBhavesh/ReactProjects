@@ -10,7 +10,7 @@ function Card({
     
     return (
         <>
-            <div className="lg:w-96 lg:h-32 w-80 h-28 bg-white flex justify-between items-center rounded-xl m-2">
+            <div className="lg:w-96  w-80 h-28 bg-white flex justify-between items-center rounded-xl m-2">
 
                 <div className="lg:w-64 w-48 bg-white flex justify-center items-start flex-col flex-wrap m-2 p-1"> 
                    <div className="ps-3 pb-2 flex justify-center items-center flex-col flex-wrap text-gray-700">
