@@ -58,12 +58,34 @@ function Navbar(){
 
                             <li>
                                 <NavLink
+                                    to= "/profile"
+                                    className={({isActive}) =>
+                                        `${(isActive)? "text-orange-700":"text-gray-800"} block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Profile
+                                </NavLink>
+                            </li>
+
+                            <li>
+                                <NavLink
                                     to="/contact"
                                     className={({isActive}) =>
                                         `${(isActive) ? "text-orange-700":"text-gray-800"} block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
                                     Contact
+                                </NavLink>
+                            </li>
+
+                            <li>
+                                <NavLink
+                                    to= "/user/This is an example of fetching dynamic data from url.(this complete string is fetched from url dynamically...)"
+                                    className={({isActive}) =>
+                                        `${(isActive)? "text-orange-700":"text-gray-800"} block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    user
                                 </NavLink>
                             </li>
 
