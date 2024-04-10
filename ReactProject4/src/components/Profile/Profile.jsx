@@ -24,9 +24,9 @@ function Profile(){
     return(
         <>
             <div className='bg-orange-700 text-white'>
-                <div className='w-full h-lvh  flex flex-wrap justify-evenly items-center font-bold lg:text-9xl text-5xl'>
+                <div className='w-full h-lvh   flex flex-wrap justify-evenly items-center font-bold lg:text-9xl text-5xl'>
                     
-                    <img className='rounded-full' src={data.avatar_url} alt="" />
+                    <img className='rounded-full w-72' src={data.avatar_url} alt="" />
                     <h1>{data.login}</h1>
                 
                     

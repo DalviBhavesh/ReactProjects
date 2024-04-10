@@ -13,12 +13,7 @@ function App() {
 
   return (
     <>
-    <div className='w-lvw h-lvh flex justify-center items-center flex-col text-9xl'>
-      <Navbar/>
-      <Home/>
-      <Footer/> 
-    </div>
-       
+    
     </>
   )
 }
