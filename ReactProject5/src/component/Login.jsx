@@ -26,7 +26,7 @@ function Login(){
     return (
         <>
         <div>
-          <h1 className='w-full  flex justify-center items-center flex-col text-7xl text-black text-center'>
+          <h1 className='w-full  flex justify-center items-center flex-col text-5xl  text-black text-center'>
             LOGIN
           </h1>
         </div>
