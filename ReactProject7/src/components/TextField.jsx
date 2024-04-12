@@ -17,7 +17,7 @@ function TextField(){
 
     return (
         <>
-            <form onSubmit={add} className="flex flex-wrap justify-center w-full items-center space-x-2 md:w-1/3">
+            <form onSubmit={add} className="flex  flex-wrap justify-center w-full items-center space-x-2 md:w-1/3">
             <input
                 className="flex h-10 w-full bg-white  rounded-md border border-white shadow-md bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                 type="text"
