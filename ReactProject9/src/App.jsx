@@ -60,9 +60,9 @@ function App() {
       }else if(data[2] === data[5] && data[5] == data[8] && data[8]!=''){
         setLock(true)
         setHead(two.current.innerText +" - Wins !");
-        two.current.style.backgroundColor = "green"
-        five.current.style.backgroundColor = "green"
-        eight.current.style.backgroundColor = "green"
+        two.current.style.backgroundColor = "#84CC16"
+        five.current.style.backgroundColor = "#84CC16"
+        eight.current.style.backgroundColor = "#84CC16"
       }else if(data[0] === data[4] && data[4] == data[8] && data[8]!=''){
         setLock(true)
         setHead(zero.current.innerText +" - Wins !");
