@@ -14,7 +14,8 @@ function App() {
                         .then((result)=>{return result.json()})
                         // .then((res)=>{console.log(res)})
 
-        console.log(data)
+        // console.log(data)
+        console.log("data loaded")
         setWeather(data);
         
         
@@ -31,7 +32,7 @@ function App() {
       </div>
       
       <div 
-        className=' py-20 lg:p-2 h-lvh flex flex-row lg:flex-col flex-wrap justify-center items-center overflow-y-auto text-white'
+        className=' py-20 lg:p-2 h-lvh flex flex-row lg:flex-col flex-wrap justify-center items-center overflow-y-auto text-white '
         style={{
           backgroundImage: `url(./src/assets/globe.jpg)`,
           backgroundRepeat: 'no-repeat',

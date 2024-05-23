@@ -64,7 +64,7 @@ convertTime()
 
                     <div>
                             <div className=" flex flex-row justify-center items-center p-2">
-                                <img src="./src/assets/hot.png"  className="h-24 w-24 lg:h-32 lg:w-32"/>
+                                <img src="./src/assets/hot.png" alt="./src/assets/hot.png"  className="h-24 w-24 lg:h-32 lg:w-32 "/>
                             </div>
                     </div>
 
@@ -166,7 +166,7 @@ convertTime()
 
                         <div className=" flex flex-col lg:flex-row justify-center item-center">
                             <div className="flex justify-center items-center">
-                            <img src="./src/assets/air-hot-balloon.png" className="w-20 m-4 " />
+                            <img src="./src/assets/hot-air-balloon.gif" className="w-20 m-4 rounded-full border-2 border-black " />
                             </div>
                             <div className=" flex justify-center item-center text-4xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.wind.speed)): "NA "}</span><span className="text-lg">m/sec</span>

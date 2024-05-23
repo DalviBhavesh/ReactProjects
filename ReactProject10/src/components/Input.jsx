@@ -20,7 +20,7 @@ function Input(
                         backgroundPosition: 'center',
                         backgroundSize: 'cover'
                       }}></div> */}
-                      <img src="./src/assets/wind-power.gif" className="h-12 w-12 mx-2 shadow-lg rounded-full " />
+                      <img src="./src/assets/wind-power.gif" className="h-12 w-12 mx-2 shadow-lg rounded-full border-2 border-black" />
                 <h1 className="hidden lg:block text-3xl text-white ">Cloudy.io</h1>
             </div>
             
@@ -36,7 +36,10 @@ function Input(
                     placeholder="Search"
                     value={place}
                 />
-                <div className='bg-white w-14 text-2xl flex justify-center items-center bg-transparent shadow   rounded-e-full '>
+                <div 
+                className='bg-white w-14 text-2xl flex justify-center items-center bg-transparent shadow  rounded-e-full hover:bg-slate-200 z-50'
+                onClick={()=>{place !== "" && place.substring(place.length-1) !== " " ? setPlace(place+" "):""}}
+                >
                     <BiSearchAlt />
                 </div>
             </div>
