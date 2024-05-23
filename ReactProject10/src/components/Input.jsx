@@ -20,7 +20,7 @@ function Input(
                         backgroundPosition: 'center',
                         backgroundSize: 'cover'
                       }}></div> */}
-                      <img src="./src/assets/weather-app.png" className="h-12 w-12 me-2 shadow-2xl rounded-3xl " />
+                      <img src="./src/assets/sun.png" className="h-12 w-12 me-2 shadow-2xl  " />
                 <h1 className="hidden lg:block text-3xl  ">Cloudy.io</h1>
             </div>
             

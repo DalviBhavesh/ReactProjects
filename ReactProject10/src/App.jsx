@@ -31,7 +31,7 @@ function App() {
       </div>
       
       <div 
-        className=' py-20 h-lvh flex flex-row flex-wrap justify-center items-center overflow-auto text-white'
+        className=' py-20 lg:p-2 h-lvh flex flex-row lg:flex-col flex-wrap justify-center items-center overflow-y-auto text-white'
         style={{
           backgroundImage: `url(./src/assets/3d-nature-with-clouds-mountains.jpg)`,
           backgroundRepeat: 'no-repeat',
