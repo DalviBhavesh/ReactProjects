@@ -46,16 +46,16 @@ convertTime()
 
                 {/* temprature data start */}
 
-                <div className="backdrop-blur-lg shadow-lg flex flex-col justify-evenly items-center p-3 m-2 rounded-2xl cursor-pointer" style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+                <div className="backdrop-blur-3xl shadow-lg flex flex-col justify-evenly items-center p-3 m-2 rounded-2xl cursor-pointer" style={{backgroundColor: "rgba(0,0,0,0)",}}>
 
                 <div className="w-full flex justify-between items-center ">
                     
                     <h1 className="text-lg text font-bold ">
                         {weather&&weather.cod == 200 ? place.toUpperCase(): "Invalid Search"}
                     </h1>
-                    <h1 className="text-lg text font-bold text-yellow-200">
-                        {weather&&weather.cod == 200 ? weather.sys.country: "?"}
-                    </h1>
+                    <div className="text-lg  text  h-7 w-10 flex justify-center item-center bg-blue-800 text-white rounded-full ">
+                        <h1>{weather&&weather.cod == 200 ? weather.sys.country: "?"}</h1>
+                    </div>
                     
                 </div>
 
@@ -124,7 +124,7 @@ convertTime()
                 <div>
                 <div className="flex flex-row flex-wrap justify-center items-center">
 
-                <div className="cursor-pointer backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-2 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+                <div className="cursor-pointer backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0)",}}>
                     <div className="w-full text-center lg:text-start cursor-pointer">
                         Humidity
                     </div>
@@ -139,7 +139,7 @@ convertTime()
                     
                 </div>
 
-                <div className="cursor-pointer backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+                <div className="cursor-pointer backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0)",}}>
                     <div className="w-full text-center lg:text-start cursor-pointer">
                         Pressure
                     </div>
@@ -159,14 +159,14 @@ convertTime()
 
                 <div className="flex flex-row flex-wrap justify-center items-center">
 
-                    <div className=" backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-2  lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2  lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0)",}}>
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             wind Speed
                         </div>
 
                         <div className=" flex flex-col lg:flex-row justify-center item-center">
                             <div className="flex justify-center items-center">
-                            <img src="./src/assets/air-hot-balloon.png" className="w-20 m-4" />
+                            <img src="./src/assets/air-hot-balloon.png" className="w-20 m-4 " />
                             </div>
                             <div className=" flex justify-center item-center text-4xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.wind.speed)): "NA "}</span><span className="text-lg">m/sec</span>
@@ -175,7 +175,7 @@ convertTime()
                         
                     </div>
 
-                    <div className=" backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0)",}}>
                         
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             wind direction
@@ -183,7 +183,7 @@ convertTime()
 
                         <div className=" flex flex-col lg:flex-row justify-center item-center">
                             <div className=" rounded-full flex justify-center item-center"  style={{rotate:`${(weather&&weather.cod == 200 ? weather.wind.deg : "0") +"deg"}`}}>
-                                <img src="./src/assets/direction.png" className= "w-20 m-4" />
+                                <img src="./src/assets/direction.png" className= "w-16 m-6" />
                             </div>
                             <div className=" flex justify-center item-center text-4xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.wind.deg)): "NA "}</span><span className="text-lg">{"\u00B0"}</span>
@@ -202,7 +202,10 @@ convertTime()
 
             {/* other data starts */}
             <div className="flex flex-row flex-wrap justify-evenly item-center">
-                    <div className=" backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-1 m-1  lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+
+                    
+
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-1 m-1  lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0)",}}>
                         
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             Sunrise
@@ -212,7 +215,7 @@ convertTime()
                             <div className=" rounded-full flex justify-center item-center" >
                                 <img src="./src/assets/sunrise.png" className= "w-20 m-4 " />
                             </div>
-                            <div className=" flex justify-center item-center text-5xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
+                            <div className=" flex justify-center item-center text-4xl m-2 lg:m-0 lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunrise)): "NA"}</span><span className="text-lg">AM</span>
                             </div>
                         </div>
@@ -222,7 +225,7 @@ convertTime()
 
 
 
-                    <div className=" backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-1 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-1 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0)",}}>
                         
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             Sunset
@@ -232,7 +235,7 @@ convertTime()
                             <div className=" rounded-full flex justify-center item-center"  >
                                 <img src="./src/assets/half-moon.png" className= "w-20 m-4" />
                             </div>
-                            <div className=" flex justify-center item-center text-5xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
+                            <div className=" flex justify-center item-center text-4xl m-2 lg:m-0 lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunset)): "NA"}</span><span className="text-lg">PM</span>
                             </div>
                         </div>

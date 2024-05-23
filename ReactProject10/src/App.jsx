@@ -26,14 +26,14 @@ function App() {
         
   return (
     <>
-      <div className='flex justify-end items-center fixed pe-2 lg:p-3 w-lvw z-50 backdrop-blur-xl text-blue-800' >
+      <div className='flex justify-end items-center fixed pe-2 lg:p-3 w-lvw z-50 backdrop-blur-xl lg:backdrop-blur-0 ' >
         <Input place = {place} setPlace = {setPlace} />
       </div>
       
       <div 
         className=' py-20 lg:p-2 h-lvh flex flex-row lg:flex-col flex-wrap justify-center items-center overflow-y-auto text-white'
         style={{
-          backgroundImage: `url(./src/assets/3d-nature-with-clouds-mountains.jpg)`,
+          backgroundImage: `url(./src/assets/globe.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundSize: 'cover'
