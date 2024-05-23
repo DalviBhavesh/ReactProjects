@@ -1,4 +1,7 @@
 import React from "react";
+import { BiSearchAlt } from "react-icons/bi";
+import { TiWeatherCloudy } from "react-icons/ti";
+
 
 function Input(
     {
@@ -8,12 +11,33 @@ function Input(
 ){
 
     return(
-        <>
-            <input
-                className='bg-blue-300 p-2 rounded-md border border-white hover:border-black '
-                onChange={(e)=>{setPlace(e.target.value)}}
-                value={place}
-            />
+        <> 
+            <div className="w-lvw  lg:absolute flex  items-center lg:justify-start p-2 lg:pl-6">
+                {/* <div className="w-10 h-10 flex justify-center text-center items-center text-6xl lg:text-5xl pl-2 pr-2"
+                    style={{
+                        backgroundImage: `url(./src/assets/cloudy.png)`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover'
+                      }}></div> */}
+                      <img src="./src/assets/cloudy.png" className="h-12 w-12 me-2 " />
+                <h1 className="hidden lg:block text-3xl  ">Cloudy.io</h1>
+            </div>
+            
+            <div className="flex flex-row lg:pr-6 p-2 lg:p-0">
+                
+                
+                <input
+                    className='bg-white w-52 text-lg lg:w-80 pl-5 p-2 z-50 shadow rounded-s-full '
+                    onChange={(e)=>{setPlace(e.target.value)}}
+                    placeholder="Search"
+                    value={place}
+                />
+                <div className='bg-white w-14 text-2xl flex justify-center items-center bg-transparent shadow   rounded-e-full '>
+                    <BiSearchAlt />
+                </div>
+            </div>
+           
         </>
     )
 

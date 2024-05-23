@@ -26,8 +26,23 @@ function App() {
         
   return (
     <>
-      <Input place = {place} setPlace = {setPlace} />
-      <Card weather={weather} />
+      <div className='flex justify-end items-center fixed pe-2 lg:p-3 w-lvw z-50 backdrop-blur-xl text-blue-800' >
+        <Input place = {place} setPlace = {setPlace} />
+      </div>
+      
+      <div 
+        className=' py-20 h-lvh flex flex-row flex-wrap justify-center items-center overflow-auto text-white'
+        style={{
+          backgroundImage: `url(./src/assets/3d-nature-with-clouds-mountains.jpg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}
+        >
+          <Card place = {place} weather={weather} />
+          
+      </div>
+      
     </>
   )
 }
