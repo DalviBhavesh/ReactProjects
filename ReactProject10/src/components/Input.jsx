@@ -20,7 +20,7 @@ function Input(
                         backgroundPosition: 'center',
                         backgroundSize: 'cover'
                       }}></div> */}
-                      <img src="./src/assets/cloudy.png" className="h-12 w-12 me-2 " />
+                      <img src="./src/assets/weather-app.png" className="h-12 w-12 me-2 shadow-2xl rounded-3xl " />
                 <h1 className="hidden lg:block text-3xl  ">Cloudy.io</h1>
             </div>
             
@@ -29,6 +29,9 @@ function Input(
                 
                 <input
                     className='bg-white w-52 text-lg lg:w-80 pl-5 p-2 z-50 shadow rounded-s-full '
+                    style={{
+                            outline: "none",
+                    }}  
                     onChange={(e)=>{setPlace(e.target.value)}}
                     placeholder="Search"
                     value={place}

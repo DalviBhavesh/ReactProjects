@@ -70,7 +70,7 @@ convertTime()
                         <div>
                             <div className="w-full flex  justify-center items-center">    
                                 <div className="text-6xl lg:text-7xl flex flex-row justify-normal font-extralight cursor-pointer">
-                                    <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.main.temp-273.15)).substring(0,5): "NAN"}</span><span className="text-lg">{"\u00B0"}C</span>
+                                    <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.main.temp-273.15)).substring(0,5): "NA!"}</span><span className="text-lg">{"\u00B0"}C</span>
                                 </div> 
                             </div>
                         </div>
@@ -89,7 +89,7 @@ convertTime()
                                 Feels Like
                             </h1>
                             <h1>
-                                {weather&&weather.cod == 200 ? JSON.stringify((weather.main.feels_like-273.15)).substring(0,5)+ " \u00B0"+"C": "No Data Found"}
+                                {weather&&weather.cod == 200 ? JSON.stringify((weather.main.feels_like-273.15)).substring(0,5)+ " \u00B0"+"C": "NA"}
                             </h1>
                         </div>
                          
@@ -98,7 +98,7 @@ convertTime()
                                 Max Temp
                             </h1>
                             <h1>
-                            {weather&&weather.cod == 200 ? JSON.stringify((weather.main.temp_max-273.15)).substring(0,5)+ " \u00B0"+"C": "No Data Found"}
+                            {weather&&weather.cod == 200 ? JSON.stringify((weather.main.temp_max-273.15)).substring(0,5)+ " \u00B0"+"C": "NA"}
                             </h1>
                         </div>
 
@@ -107,7 +107,7 @@ convertTime()
                                 Min Temp
                             </h1>
                             <h1 >
-                            {weather&&weather.cod == 200 ? JSON.stringify((weather.main.temp_min-273.15)).substring(0,5)+ " \u00B0"+"C": "No Data Found"}
+                            {weather&&weather.cod == 200 ? JSON.stringify((weather.main.temp_min-273.15)).substring(0,5)+ " \u00B0"+"C": "NA"}
                             </h1>
                         </div>
                 </div>
@@ -155,7 +155,7 @@ convertTime()
 
                     <div className="flex flex-row flex-wrap justify-center items-center">
 
-                        <div className=" backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
+                        <div className=" backdrop-blur-lg shadow-lg flex flex-col justify-center items-center p-2  lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0.5)",}}>
                             <div className="w-full text-center lg:text-start">
                                 wind Speed
                             </div>
