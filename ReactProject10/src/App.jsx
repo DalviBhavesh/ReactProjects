@@ -14,7 +14,7 @@ function App() {
                         .then((result)=>{return result.json()})
                         // .then((res)=>{console.log(res)})
 
-        // console.log(data)
+        //console.log(data)
         console.log("data loaded")
         setWeather(data);
         

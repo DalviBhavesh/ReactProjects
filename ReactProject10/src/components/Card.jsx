@@ -46,7 +46,7 @@ convertTime()
 
                 {/* temprature data start */}
 
-                <div className="backdrop-blur-3xl shadow-lg flex flex-col justify-evenly items-center p-3 m-2 rounded-2xl cursor-pointer" style={{backgroundColor: "rgba(0,0,0,0)",}}>
+                <div className="backdrop-blur-3xl shadow-lg flex flex-col justify-evenly items-center p-3 m-2 rounded-2xl cursor-pointer" style={{backgroundColor: "rgba(1,1,1,0.2)",}}>
 
                 <div className="w-full flex justify-between items-center ">
                     
@@ -124,8 +124,8 @@ convertTime()
                 <div>
                 <div className="flex flex-row flex-wrap justify-center items-center">
 
-                <div className="cursor-pointer backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0)",}}>
-                    <div className="w-full text-center lg:text-start cursor-pointer">
+                <div className="cursor-pointer backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(1,1,1,0.2)",}}>
+                    <div className="w-full text-center  lg:text-start cursor-pointer">
                         Humidity
                     </div>
                     <div className=" flex flex-col lg:flex-row justify-center item-center" >
@@ -139,7 +139,7 @@ convertTime()
                     
                 </div>
 
-                <div className="cursor-pointer backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0)",}}>
+                <div className="cursor-pointer backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(1,1,1,0.2)",}}>
                     <div className="w-full text-center lg:text-start cursor-pointer">
                         Pressure
                     </div>
@@ -159,7 +159,7 @@ convertTime()
 
                 <div className="flex flex-row flex-wrap justify-center items-center">
 
-                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2  lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(0,0,0,0)",}}>
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2  lg:p-3 lg:m-2 rounded-2xl" style={{backgroundColor: "rgba(1,1,1,0.2)",}}>
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             wind Speed
                         </div>
@@ -175,7 +175,7 @@ convertTime()
                         
                     </div>
 
-                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0)",}}>
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-2 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(1,1,1,0.2)",}}>
                         
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             wind direction
@@ -205,7 +205,7 @@ convertTime()
 
                     
 
-                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-1 m-1  lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0)",}}>
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-1 m-1  lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(1,1,1,0.2)",}}>
                         
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             Sunrise
@@ -225,7 +225,7 @@ convertTime()
 
 
 
-                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-1 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(0,0,0,0)",}}>
+                    <div className=" backdrop-blur-3xl shadow-lg flex flex-col justify-center items-center p-1 m-1 lg:p-3 lg:m-2 rounded-2xl " style={{backgroundColor: "rgba(1,1,1,0.2)",}}>
                         
                         <div className="w-full text-center lg:text-start cursor-pointer">
                             Sunset
