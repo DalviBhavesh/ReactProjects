@@ -44,21 +44,29 @@ function Navbar(){
                        
                 </div>
 
-                <div className= {`fixed  p-1 h-full w-full top-12 bg-green-400 lg:hidden ${ham} justify-start items-center flex-col `}>
-                    <div className=" w-full flex justify-start items-center">
-                        <button className="px-2 py-1 mx-2  hover:bg-amber-300"  onClick={hamburger} >
-                            X
-                        </button>
-                    </div>
-                    {
-                        lable&&lable.map((lableName)=>(
-                            <div className="p-1 m-2 w-full hover:bg-amber-300 flex justify-center items-center">{lableName.toUpperCase()}</div>
-                        ))
-                        
-                    }
-                    
-                </div>
+                
             </div>  
+
+            <div className= {`fixed  p-1 h-full w-lvw top-12 bg-green-400 lg:hidden ${ham} justify-start items-center flex-col `}>
+                    <div className="inline pb-4  w-full  bg-lime-500 justify-start items-center flex-col">
+
+                        <div className="w-full flex justify-start items-center">
+                            <button className="px-2 py-1 mx-2  hover:bg-amber-300"  onClick={hamburger} >
+                                X
+                            </button>
+                        </div>
+
+                        {
+                            lable&&lable.map((lableName)=>(
+                                <div className="p-1 m-2 hover:bg-amber-300 flex justify-center items-center">{lableName.toUpperCase()}</div>
+                            ))
+                            
+                        }
+
+                    </div>
+                    
+                    
+            </div>
         </>
     );
 }
