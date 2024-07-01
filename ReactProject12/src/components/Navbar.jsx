@@ -5,7 +5,7 @@ function Navbar(){
     const lable = [
             {
                 name: "home",
-                url: "/home"
+                url: ""
             },
             {
                 name : "projects",
