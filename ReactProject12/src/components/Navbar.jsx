@@ -1,7 +1,22 @@
 import React, { useCallback, useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar(){
-    const lable = ["home", "projects", "contacts" ];
+    const lable = [
+            {
+                name: "home",
+                url: "/home"
+            },
+            {
+                name : "projects",
+                url: "/project"
+            },
+            {
+                name: "contacts",
+                url: "/contact"
+            } 
+        ];
+
     let [ham, setHam] = useState("hidden");
     
 
@@ -28,7 +43,13 @@ function Navbar(){
                 <div className=" p-1 mx-2 w-full  bg-green-400 hidden lg:flex justify-center items-center">
                     {
                         lable&&lable.map((lableName)=>(
-                            <div className="p-1 mx-2 hover:bg-amber-300">{lableName.toUpperCase()}</div>
+                            <NavLink 
+                                className={({isActive})=>isActive? `p-1 mx-2 bg-amber-300`:`p-1 mx-2 hover:bg-amber-300`} 
+                                to={lableName.url}
+                                
+                            >
+                                {lableName.name.toUpperCase()}
+                            </NavLink>
                         ))
                         
                     }
@@ -58,7 +79,12 @@ function Navbar(){
 
                         {
                             lable&&lable.map((lableName)=>(
-                                <div className="p-1 m-2 hover:bg-amber-300 flex justify-center items-center">{lableName.toUpperCase()}</div>
+                                <NavLink 
+                                    className={({isActive})=> isActive? `p-1 m-2 bg-amber-300 flex justify-center items-center`:`p-1 m-2 hover:bg-amber-300 flex justify-center items-center`} 
+                                    to={lableName.url}
+                                >
+                                    {lableName.name.toUpperCase()}
+                                </NavLink>
                             ))
                             
                         }
