@@ -12,7 +12,7 @@ function Navbar(){
                 url: "/project"
             },
             {
-                name: "contacts",
+                name: "Contact",
                 url: "/contact"
             } 
         ];
@@ -36,7 +36,7 @@ function Navbar(){
 
     return(
         <>
-            <div className=" sticky h-12 w-full p-2 bg-black flex justify-start items-center">
+            <div className=" fixed h-12 w-full p-2 bg-black flex justify-start items-center z-50">
                 
                 <div className="p-1 mx-2 bg-green-400 flex justify-center items-center">LOGO</div>
                 
@@ -44,6 +44,7 @@ function Navbar(){
                     {
                         lable&&lable.map((lableName)=>(
                             <NavLink 
+                                key={lableName.name}
                                 className={({isActive})=>isActive? `p-1 mx-2 bg-amber-300`:`p-1 mx-2 hover:bg-amber-300`} 
                                 to={lableName.url}
                                 
@@ -68,7 +69,7 @@ function Navbar(){
                 
             </div>  
 
-            <div className= {`fixed  p-1 h-full w-lvw top-12 bg-green-400 lg:hidden ${ham} justify-start items-center flex-col `}>
+            <div className= {`fixed  p-1 h-full w-lvw top-12 bg-green-400 lg:hidden ${ham} justify-start items-center flex-col z-50 `}>
                     <div className="inline pb-4  w-full  bg-lime-500 justify-start items-center flex-col">
 
                         <div className="w-full flex justify-start items-center">
@@ -80,6 +81,7 @@ function Navbar(){
                         {
                             lable&&lable.map((lableName)=>(
                                 <NavLink 
+                                    key={lableName.name}
                                     className={({isActive})=> isActive? `p-1 m-2 bg-amber-300 flex justify-center items-center`:`p-1 m-2 hover:bg-amber-300 flex justify-center items-center`} 
                                     to={lableName.url}
                                 >
