@@ -3,8 +3,9 @@ import React from "react"
 function Contact(){
     return(
         <>
-            <div className="h-full w-full flex justify-center item-center text-7xl">
+            <div className="w-full h-lvh bg-blue-400 text-7xl flex flex-col justify-center items-center">
                 CONTACT
+                <p className="text-xl">Work under progress............!</p>
             </div>
         </>
     )

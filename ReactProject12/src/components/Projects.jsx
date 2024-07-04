@@ -1,6 +1,10 @@
 import React, { useCallback, useState } from "react"
+import { FiInfo } from "react-icons/fi";
+import { RxExternalLink } from "react-icons/rx";
 
 function Project(){
+
+   
 
     const projects = [
         {
@@ -36,7 +40,7 @@ function Project(){
             desc: "This project is made using reactjs and tailwind css for learning purpose",
             imageUrl: "https://img.freepik.com/free-vector/phishing-account-concept-with-envelope-credit-card_23-2148555136.jpg?uid=R77836449&ga=GA1.1.1609911804.1708796131&semt=ais_user",
             link: "https://dalvibhavesh.github.io/RandomPasswordGenerator/",
-            customeStyle: "https://dalvibhavesh.github.io/RandomPasswordGenerator/"
+            customeStyle: "object-cover object-top"
         },
         {
             name: "BMI calculator",
@@ -118,11 +122,12 @@ function Project(){
 
     return(
         <>
+            
             <div className="h-lvh w-full pt-14  bg-white flex justify-center item-center flex-wrap overflow-y-scroll">
                 
                 {
                     projects&&projects.map((e)=>(
-                        <div key={e.name} className="w-80 h-96 m-5 pb-2  bg-lime-400 flex flex-col justify-evenly items-center rounded-lg hover:shadow-2xl border border-black">
+                        <div key={e.name} className="w-80 h-96 m-5 pb-2  bg-lime-400 flex flex-col justify-evenly items-center rounded-lg hover:shadow-2xl border border-black ">
                         
                             <div className="w-full h-64 flex justify-center items-center ">
                                 <img 
@@ -136,12 +141,16 @@ function Project(){
                             </div>
 
                             <div className="bg-white w-full h-24 flex flex-row justify-center items-center border-t border-black border-dashed">
-                                <a href={e.link} target="_blank" className="bg-black hover:bg-slate-700 text-white shadow-lg p-2 rounded-lg">view Project</a>
+                                <a href={e.link} target="_blank" className="w-36 bg-black hover:bg-slate-700 text-white shadow-lg p-2 rounded-lg flex flex-row justify-evenly items-center ">
+                                    <p className="text-xl"><RxExternalLink /></p>
+                                    <p>View Project</p>
+                                </a>
                                 <button 
-                                    className="bg-black ms-2 hover:bg-slate-700 text-white shadow-lg p-2 rounded-lg"
+                                    className="w-36 bg-black ms-2 hover:bg-slate-700 text-white shadow-lg p-2 rounded-lg  flex flex-row justify-evenly items-center "
                                     onClick={()=>{setDisplay("flex"); setInfo(e.desc); setTopic(e.name)}}
                                 >
-                                    Description
+                                    <p className="text-xl"><FiInfo /></p>
+                                    <p >Description</p>
                                 </button>
                             </div>
 
@@ -151,7 +160,7 @@ function Project(){
 
                 {/* discription component */}
                 <div className={`fixed top-12 w-full h-lvh bg-transparent backdrop-blur-sm ${display} justify-center items-center`}>
-                    <div className="w-80 bg-white p-3 flex flex-col justify-center items-center border border-black rounded-lg">
+                    <div className="w-80 bg-white p-3 flex flex-col justify-center items-center border border-black rounded-lg shadow-lg">
                         <div className="w-full p-2 flex justify-end items-center border-b border-black">
                             <h1 className="w-full text-center text-xl font-bold">{topic.toUpperCase()}</h1>
                         </div>
