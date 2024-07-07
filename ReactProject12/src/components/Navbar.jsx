@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { TiThMenuOutline } from "react-icons/ti";
 import { SlClose } from "react-icons/sl";
+import { PiCodesandboxLogoDuotone } from "react-icons/pi";
 
 function Navbar(){
     const lable = [
@@ -10,11 +11,15 @@ function Navbar(){
                 url: ""
             },
             {
-                name : "Projects",
+                name : "About Me",
+                url: "/about"
+            },
+            {
+                name : "My Projects",
                 url: "/project"
             },
             {
-                name: "Contact",
+                name: "Contact Me",
                 url: "/contact"
             } 
         ];
@@ -39,7 +44,11 @@ function Navbar(){
     return(
         <>
             <div className=" fixed h-12 w-full p-2 lg:pe-10 bg-white flex justify-start items-center z-50 shadow-md border-b-black ">
-                
+                <div className="p-1 ms-2 rounded-lg border-2 shadow-md border-black flex justify-center items-center ">
+                                
+                                <a href="/" className="text-2xl animate-bounce"><PiCodesandboxLogoDuotone /></a>  
+                                
+                </div>
                 <div className="p-1 mx-2 rounded-lg border-2 shadow-md border-black flex justify-center items-center font-mono  font-bold">
                             
                               <a href="/">[Bhavesh.CodeBase]</a>  
@@ -75,7 +84,7 @@ function Navbar(){
                 
             </div>  
 
-            <div className= {`fixed  p-1 h-full w-lvw top-12 backdrop-blur-sm lg:hidden ${ham} justify-start items-center flex-col z-50 `}>
+            <div onClick={hamburger} className= {`fixed  p-1 h-full w-lvw top-12 backdrop-blur-sm lg:hidden ${ham} justify-start items-center flex-col z-50 `}>
                     <div className="inline pt-2 pb-4  w-full  bg-lime-400 justify-start items-center flex-col rounded-lg ">
 
                         <div className="w-full flex justify-start items-center">
@@ -91,7 +100,7 @@ function Navbar(){
                                     className={({isActive})=> isActive? `p-1 m-2 bg-white flex justify-center items-center shadow-md rounded-lg border-2 border-black`:`p-1 m-2 hover:shadow-md hover:bg-lime-300 flex justify-center items-center rounded-lg border-2 border-lime-400`} 
                                     to={lableName.url}
                                 >
-                                    {lableName.name.toUpperCase()}
+                                    {lableName.name}
                                 </NavLink>
                             ))
                             
