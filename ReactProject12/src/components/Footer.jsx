@@ -20,15 +20,15 @@ function Footer(){
                         </a>
 
 
-                        <ul class="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
+                        <ul className="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
                             <li ><NavLink to="/"  className={({isActive})=>(isActive?"text-gray-400 underline":"text-white")+" hover:text-gray-400"}>Home</NavLink></li>
-                            <li class="sm:my-0 my-2" ><NavLink to="/about"  className={({isActive})=>(isActive?"text-gray-400 underline":"text-white")+" hover:text-gray-400"}>About Me</NavLink></li>
+                            <li className="sm:my-0 my-2" ><NavLink to="/about"  className={({isActive})=>(isActive?"text-gray-400 underline":"text-white")+" hover:text-gray-400"}>About Me</NavLink></li>
                             <li ><NavLink to="/project"  className={({isActive})=>(isActive?"text-gray-400 underline":"text-white")+" hover:text-gray-400"}>My Projects</NavLink></li>
-                            <li  class="sm:my-0 my-2"><NavLink to="/contact"  className={({isActive})=>(isActive?"text-gray-400 underline":"text-white")+" hover:text-gray-400"}>Contact Me</NavLink></li>
+                            <li  className="sm:my-0 my-2"><NavLink to="/contact"  className={({isActive})=>(isActive?"text-gray-400 underline":"text-white")+" hover:text-gray-400"}>Contact Me</NavLink></li>
                         </ul>
 
 
-                        <div class="flex  space-x-4 sm:justify-center  ">
+                        <div className="flex  space-x-4 sm:justify-center  ">
 
                             <a href="https://www.linkedin.com/in/bhavesh-dalvi-a74758244/" target="_blank"  className="w-9 h-9 text-xl rounded-full bg-gray-800 text-white flex justify-center items-center hover:bg-lime-400 hover:text-black">
                             <IoLogoLinkedin />       
