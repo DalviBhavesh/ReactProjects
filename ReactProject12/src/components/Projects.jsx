@@ -75,7 +75,7 @@ function Project(){
             desc: "This project is made using reactjs and tailwind css for learning purpose",
             imageUrl: "https://img.freepik.com/free-vector/colorful-abstract-backgroun-paper-cut-style_1361-585.jpg?uid=R77836449&ga=GA1.1.1609911804.1708796131&semt=ais_user",
             link: "https://dalvibhavesh.github.io/JS_Projects/Project7/index.html",
-            customeStyle: "object-cover object-top"
+            customeStyle: "object-cover object-center"
         },
         {
             name: "fidget game",
@@ -127,12 +127,12 @@ function Project(){
                 
                 {
                     projects&&projects.map((e)=>(
-                        <div key={e.name} className="w-80 h-96 m-5 pb-2  bg-lime-400 flex flex-col justify-evenly items-center rounded-lg hover:shadow-2xl border border-black ">
+                        <div key={e.name} className="w-80 h-96 m-5 pb-2  bg-lime-400 lg:hover:bg-red-500 flex flex-col justify-evenly items-center rounded-lg shadow-xl border-4 border-white  ">
                         
                             <div className="w-full h-64 flex justify-center items-center ">
                                 <img 
                                     src={e.imageUrl? e.imageUrl:"https://img.freepik.com/free-photo/young-handsome-tattooed-man-makes-bonfire-by-ocean_1321-3195.jpg?t=st=1719943157~exp=1719946757~hmac=2f647f970c221813b69a467394ec01e3842a7750338db67b1f7440910aae286e&w=360"} 
-                                    className={`w-full h-64 bg-white flex justify-center items-center rounded-t-lg  ${e.customeStyle ? e.customeStyle : ""}`}
+                                    className={`w-full h-64 bg-white flex justify-center items-center rounded-t-sm  ${e.customeStyle ? e.customeStyle : ""}`}
                                 /> 
                             </div>
                             
@@ -141,12 +141,12 @@ function Project(){
                             </div>
 
                             <div className="bg-white w-full h-24 flex flex-row justify-center items-center border-t border-black border-dashed">
-                                <a href={e.link} target="_blank" className="w-36 bg-black hover:bg-slate-700 text-white shadow-lg p-2 rounded-lg flex flex-row justify-evenly items-center ">
+                                <a href={e.link} target="_blank" className="w-36 bg-black hover:bg-slate-900 text-white shadow-lg p-2 rounded-lg flex flex-row justify-evenly items-center ">
                                     <p className="text-xl"><RxExternalLink /></p>
                                     <p>View Project</p>
                                 </a>
                                 <button 
-                                    className="w-36 bg-black ms-2 hover:bg-slate-700 text-white shadow-lg p-2 rounded-lg  flex flex-row justify-evenly items-center "
+                                    className="w-36 bg-black ms-2 hover:bg-slate-900 text-white shadow-lg p-2 rounded-lg  flex flex-row justify-evenly items-center "
                                     onClick={()=>{setDisplay("flex"); setInfo(e.desc); setTopic(e.name)}}
                                 >
                                     <p className="text-xl"><FiInfo /></p>
