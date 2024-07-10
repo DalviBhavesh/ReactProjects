@@ -127,7 +127,7 @@ function Project(){
                 
                 {
                     projects&&projects.map((e)=>(
-                        <div key={e.name} className="w-80 h-96 m-5 pb-2  bg-lime-400 lg:hover:bg-red-500 flex flex-col justify-evenly items-center rounded-lg shadow-xl border-4 border-white  ">
+                        <div key={e.name} className="w-80 h-96 m-5 pb-2  bg-lime-400 lg:hover:bg-red-500 flex flex-col justify-evenly items-center rounded-lg shadow-xl border-4 border-black  ">
                         
                             <div className="w-full h-64 flex justify-center items-center ">
                                 <img 
