@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 
 function Home(){
     let [problemSolved, setProblemSolved] = useState();
+    let [dates, setDates] = useState();
     let leetCodeData = useEffect(()=>{
          let  data = fetch("https://leetcode-stats-api.herokuapp.com/bhaveshdalvi")
                     .then((d)=>(d.json()))
-                    .then((d)=>(
+                    .then((d)=>{
+                        console.log(d)
                         setProblemSolved(d.totalSolved) 
-                    ));    
+                        });       
     },[])
 
     return (

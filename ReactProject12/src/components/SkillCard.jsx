@@ -6,7 +6,7 @@ function SkillCard({photoUrl, skillUrl="", skillName="NOT AVAILABLE"}){
     return(
         <>
         <a href={skillUrl} target="_blank">
-        <div className="relative w-44 h-60 p-2 m-2   shadow-lg rounded-xl overflow-clip flex flex-col justify-evenly items-center hover:bg-slate-200 border-2 border-black">
+        <div className="relative w-44 h-60 p-2 m-2 bg-white  shadow-lg rounded-xl overflow-clip flex flex-col justify-evenly items-center lg:hover:bg-gray-200 border-2 border-black">
 
             
             <div  className="text-9xl text-black w-32 h-32 p-2 mb-2 bg-transparent border-2 border-transparent rounded-xl flex flex-col justify-center items-center object-contain object-center">

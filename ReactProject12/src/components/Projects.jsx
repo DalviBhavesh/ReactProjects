@@ -123,7 +123,7 @@ function Project(){
     return(
         <>
             
-            <div className="h-lvh w-full pt-14  bg-white flex justify-center item-center flex-wrap overflow-y-scroll">
+            <div className="h-fit w-full pt-14  bg-white flex justify-center item-center flex-wrap ">
                 
                 {
                     projects&&projects.map((e)=>(

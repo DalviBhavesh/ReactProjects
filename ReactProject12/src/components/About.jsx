@@ -13,6 +13,10 @@ import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa6";
+import { MdWeb } from "react-icons/md";
+import { LuBrainCircuit } from "react-icons/lu";
+import { FaEthereum } from "react-icons/fa6";
+import { TbCloudComputing } from "react-icons/tb";
 
 function About(){
     return(
@@ -82,7 +86,7 @@ function About(){
                 <div className="bg-white-900 w-80 lg:w-2/3 h-fit lg:px-4 flex flex-col flex-wrap justify-center items-center ">
                     
                     {/* UPPER SECTION */}
-                    <div className=" w-full h-80 bg-white flex flex-col  justify-evenly items-center shadow-lg rounded-lg border-4 border-black">
+                    <div className=" w-full h-80 bg-lime-300 flex flex-col  justify-evenly items-center shadow-lg rounded-lg border-4 border-black">
                         <h1 className= " top-0 w-full bg-black py-2 text-center text-3xl font-bold rounded-t-sm  text-white">My Skills</h1>
                         <div className="w-full h-full flex flex-row justify-evenly items-center overflow-x-auto overflow-clip">
                             
@@ -104,16 +108,46 @@ function About(){
                     </div>
 
                     {/* BOTTOM SECTION */}
-                    <div className="w-full h-fit bg-slate-500 my-5 flex flex-row flex-wrap justify-center items-center shadow-lg">
+                    <div className="w-full h-fit bg-white my-5 flex flex-row flex-wrap justify-center items-center ">
                         
                         {/* BOTTOM LEFT */}
-                        <div className=" h-80 w-80 lg:w-1/2 bg-purple-600 flex  justify-center items-center shadow-lg">
-                            screen 2
+                        <div className=" h-80 w-80 lg:w-1/2 my-2 lg:my-0 lg:px-2  flex  justify-center items-center ">
+                            <div className="h-full w-full border-4 border-black bg-white rounded-lg shadow-lg">
+                                <h1 className= " top-0 w-full bg-black py-2 text-center text-3xl font-bold rounded-t-sm shadow-xl  text-white">Prefered Technology</h1>
+                                <div className="w-full h-70 flex flex-wrap justify-center items-center ">
+                                    <div className="w-1/2 h-32 flex flex-col justify-center items-center font-bold text-center border-lime-300 border-e-2 border-b-2">
+                                        <MdWeb className="text-7xl"/>
+                                        <p className="text-base lg:text-lg p-1">web devlopment</p>
+                                    </div>
+                                    <div className="w-1/2 h-32 flex flex-col justify-center items-center font-bold text-center border-lime-300 border-s-2 border-b-2">
+                                        <LuBrainCircuit className="text-7xl"/>
+                                        <p className="text-base lg:text-lg p-1">Machine Learning</p>
+                                    </div>
+                                    <div className="w-1/2 h-32 flex flex-col justify-center items-center font-bold text-center border-lime-300 border-e-2 border-t-2">
+                                        <TbCloudComputing className="text-7xl"/>
+                                        <p className="text-base lg:text-lg p-1">Cloud Computing</p>
+                                    </div>
+                                    <div className="w-1/2 h-32  flex flex-col justify-center items-center font-bold text-center border-lime-300 border-s-2 border-t-2">
+                                        <FaEthereum className="text-7xl"/>
+                                        <p className="text-base lg:text-lg p-1">Blockchain</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                         
                         {/* BOTTOM RIGHT */}
-                        <div className=" h-80 w-80 lg:w-1/2 bg-orange-400 flex  justify-center items-center shadow-lg">
-                            screen 3
+                        <div className=" h-80 w-80 lg:w-1/2 my-2 lg:my-0 lg:px-2  flex  justify-center items-center ">
+                            <div className="h-full w-full border-4 border-black bg-white  rounded-lg shadow-lg ">
+                                <h1 className= " top-0 w-full bg-black py-2 text-center text-3xl font-bold rounded-t-sm shadow-lg text-white">My Strength</h1>
+                                <ul className="list-disc text-2xl ps-12 pt-8 font-bold">
+                                    <li className="p-1 bg-lime-300">Problem Solving</li>
+                                    <li className="p-1 bg-lime-300">Creativity</li>
+                                    <li className="p-1 bg-lime-300">Attention to Detail</li>
+                                    <li className="p-1 bg-lime-300">Teamwork</li>
+                                    <li className="p-1 bg-lime-300">Optimism</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
