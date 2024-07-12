@@ -32,7 +32,7 @@ function About(){
                     <div className="bg-white w-80 h-80 rounded-xl shadow-lg border-4 border-black">
                         <div className="relative bg-black w-full h-24 rounded-t-lg shadow-lg">
                             
-                            <img className="absolute left-20 top-2 h-36 rounded-full border-4 border-lime-300 shadow-lg" src="https://imagetolink.com/ib/EATCplYAZo.png" alt="" />
+                            <img className="absolute left-20 top-2 h-36 w-36 rounded-full border-4 border-lime-300 shadow-lg" src="https://imagetolink.com/ib/EATCplYAZo.png" alt="My Photo" />
 
                         </div>
                         <div className="text-center text-4xl ">
