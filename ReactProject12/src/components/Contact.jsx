@@ -9,7 +9,7 @@ function Contact(){
     
     const sendEmail = (e) => {
       e.preventDefault();
-        if( form.current.user_name.value !== "" || form.current.user_email.value !== "" || form.current.message.value !== ""){
+        if( form.current.user_name.value !== "" && form.current.user_email.value !== "" && form.current.message.value !== ""){
             emailjs
                 .sendForm('service_3737nhe', 'template_4l2eka6', form.current, {
                 publicKey: 'KjDMnh1wLC4sN3tyF',
@@ -56,7 +56,7 @@ function Contact(){
                         <label className='w-full text-center text-xl font-bold py-1'>Your Name</label>
                         <input 
                             className='mb-4 px-7 w-full h-14 border-4 border-black rounded-full shadow-xl text-xl'
-                            placeholder='Cristiano Ronaldo'
+                            placeholder='Cristiano Ronaldo 🚀'
                             type="text" 
                             name="user_name" />
                         
@@ -74,7 +74,7 @@ function Contact(){
                         <textarea 
                             className=' p-5 w-full h-60 border-4 border-black rounded-xl shadow-xl text-xl' 
                             name="message"
-                            placeholder='I am "The Greatest player of all time."' />
+                            placeholder='I am "The Greatest player of all time 🐐🌍."' />
                     </div>
 
                 </div>
