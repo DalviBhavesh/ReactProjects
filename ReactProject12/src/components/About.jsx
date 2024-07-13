@@ -125,8 +125,7 @@ function About(){
                             <SkillCard skillName="IntelliJ IDE" photoUrl={<SiIntellijidea />} skillUrl="https://getbootstrap.com/"/>
                             <SkillCard skillName="Tomcat Server" photoUrl={<SiApachetomcat />} skillUrl="https://getbootstrap.com/"/>
                             <SkillCard skillName="Python" photoUrl={<FaPython />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="C" photoUrl={<FaBootstrap />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="C++" photoUrl={<FaBootstrap />} skillUrl="https://getbootstrap.com/"/>
+                          
                             
                             
                         </div>
