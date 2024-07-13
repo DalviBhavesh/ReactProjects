@@ -118,13 +118,13 @@ function About(){
                             <SkillCard skillName="CSS" photoUrl={<IoLogoCss3 />} skillUrl="https://www.w3.org/Style/CSS/" />
                             <SkillCard skillName="Javascript" photoUrl={<IoLogoJavascript />} skillUrl="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
                             <SkillCard skillName="Bootstrap" photoUrl={<FaBootstrap />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="GCP" photoUrl={<SiGooglecloud />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="AWS" photoUrl={<FaAws />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="GCP" photoUrl={<SiGooglecloud />} skillUrl="https://cloud.google.com/"/>
+                            <SkillCard skillName="AWS" photoUrl={<FaAws />} skillUrl="https://aws.amazon.com/"/>
                             <SkillCard skillName="VS Code IDE" photoUrl={<VscVscodeInsiders />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="Eclips IDE" photoUrl={<DiEclipse />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="IntelliJ IDE" photoUrl={<SiIntellijidea />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="Tomcat Server" photoUrl={<SiApachetomcat />} skillUrl="https://getbootstrap.com/"/>
-                            <SkillCard skillName="Python" photoUrl={<FaPython />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="Eclips IDE" photoUrl={<DiEclipse />} skillUrl="https://eclipseide.org/"/>
+                            <SkillCard skillName="IntelliJ IDE" photoUrl={<SiIntellijidea />} skillUrl="https://www.jetbrains.com/idea/"/>
+                            <SkillCard skillName="Tomcat Server" photoUrl={<SiApachetomcat />} skillUrl="https://tomcat.apache.org/"/>
+                            <SkillCard skillName="Python" photoUrl={<FaPython />} skillUrl="https://www.python.org/"/>
                           
                             
                             

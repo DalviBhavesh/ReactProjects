@@ -51,7 +51,7 @@ function Navbar(){
                 </div>
                 <div className="p-1 mx-2 rounded-lg border-2 shadow-md border-black flex justify-center items-center font-mono  font-bold">
                             
-                              <a href="/">[Bhavesh.CodeBase]</a>  
+                              <a href="">[Bhavesh.CodeBase]</a>  
                               
                 </div>
                 

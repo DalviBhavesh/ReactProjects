@@ -32,7 +32,7 @@ function Contact(){
                 },
             );
         }else{
-            swal("Warning!", "Plz enter every field before submitting...", "warning");
+            swal("Warning!", "Plz enter data in every field before submitting...", "warning");
         }
       
     };
@@ -78,7 +78,7 @@ function Contact(){
                         <textarea 
                             className=' p-5 w-full h-60 border-4 border-black rounded-xl shadow-xl text-xl' 
                             name="message"
-                            placeholder='eg: I am "The Greatest player of all time 🐐🌍."' />
+                            placeholder='eg: Cristiano Ronaldo is "The Greatest player of all time 🐐🌍."' />
                     </div>
 
                 </div>
