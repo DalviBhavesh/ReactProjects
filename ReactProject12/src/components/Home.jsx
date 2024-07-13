@@ -4,6 +4,8 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { SiGithub } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-router-dom";
+import { MdOutlineDocumentScanner } from "react-icons/md";
+import { FaRegAddressCard } from "react-icons/fa6";
 
 function Home(){
     let [problemSolved, setProblemSolved] = useState();
@@ -68,10 +70,10 @@ function Home(){
                         
                         <div className="flex justify-center items-center">
                             <a href="https://drive.google.com/file/d/1LoJMC6_RJlnePpEInvrJTMxleMLXPAGt/view?usp=sharing" target="_blank" className=" p-2 mt-7 mx-1 text-center rounded-lg font-bold text-sm shadow-lg border-slate-600 bg-black text-white hover:bg-white hover:text-black hover:border-black border-2 flex justify-center items-center">
-                                View Resume
+                                <MdOutlineDocumentScanner className="text-xl mr-1" /> View Resume
                             </a>
                             <Link to="/about"  className=" p-2 mt-7 mx-1 text-center rounded-lg font-bold text-sm shadow-lg border-slate-600 bg-black text-white hover:bg-white hover:text-black hover:border-black border-2 flex justify-center items-center">
-                                More About Me
+                                <FaRegAddressCard className="text-xl mr-2" /> More About Me
                             </Link>
                         </div>
 

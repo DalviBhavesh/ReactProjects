@@ -64,7 +64,7 @@ function Contact(){
                             type="text" 
                             name="user_name" />
                         
-                        <h1 className='w-full text-center text-xl font-bold py-1  flex justify-center items-center'><LuMails className='text-3xl mx-1'/><p>Your Email </p></h1>
+                        <h1 className='w-full text-center text-xl font-bold py-1  flex justify-center items-center'><LuMails className='text-3xl mx-1'/><p>Your Email-Id</p></h1>
                         <input 
                             className='mb-4 px-7 w-full h-14 border-4 border-black rounded-full shadow-xl text-xl'
                             placeholder='eg: cr7@gmail.com' 
