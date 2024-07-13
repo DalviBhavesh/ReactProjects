@@ -56,25 +56,25 @@ function Contact(){
                         <label className='w-full text-center text-xl font-bold py-1'>Your Name</label>
                         <input 
                             className='mb-4 px-7 w-full h-14 border-4 border-black rounded-full shadow-xl text-xl'
-                            placeholder='Cristiano Ronaldo 🚀'
+                            placeholder='eg:- Cristiano Ronaldo 🚀'
                             type="text" 
                             name="user_name" />
                         
                         <label className='w-full text-center text-xl font-bold py-1'>Your Email Id</label>
                         <input 
                             className='mb-4 px-7 w-full h-14 border-4 border-black rounded-full shadow-xl text-xl'
-                            placeholder='cr7@gmail.com' 
+                            placeholder='eg:- cr7@gmail.com' 
                             type="email" 
                             name="user_email" />
                     
                     </div>
                     
                     <div className='bg-yellow-300x m-2 w-full lg:w-1/2 h-full flex flex-col justify-center items-center'>
-                        <label className='w-full text-center text-xl font-bold py-1'>Message</label>
+                        <label className='w-full text-center text-xl font-bold py-1'> Message </label>
                         <textarea 
                             className=' p-5 w-full h-60 border-4 border-black rounded-xl shadow-xl text-xl' 
                             name="message"
-                            placeholder='I am "The Greatest player of all time 🐐🌍."' />
+                            placeholder='eg:- I am "The Greatest player of all time 🐐🌍."' />
                     </div>
 
                 </div>

@@ -17,6 +17,15 @@ import { MdWeb } from "react-icons/md";
 import { LuBrainCircuit } from "react-icons/lu";
 import { FaEthereum } from "react-icons/fa6";
 import { TbCloudComputing } from "react-icons/tb";
+import { FaProjectDiagram } from "react-icons/fa";
+import { SiGooglecloud } from "react-icons/si";
+import { VscVscodeInsiders } from "react-icons/vsc";
+import { FaAws } from "react-icons/fa";
+import { DiEclipse } from "react-icons/di";
+import { SiIntellijidea } from "react-icons/si";
+import { SiApachetomcat } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+
 
 function About(){
     return(
@@ -41,9 +50,17 @@ function About(){
                             <p className="text-gray-600 text-sm"> Mumbai,India</p>
                             <div className="w-full flex justify-center item-center ">
                                 <NavLink 
+                                    to="/project"
+                                >
+                                <button className="bg-black text-white text-base font-bold  mt-4 mx-1 px-3 py-2 rounded-lg shadow-xl border-2 border-slate-600 hover:bg-white hover:text-black hover:border-black flex justify-center items-center ">
+                                    <FaProjectDiagram className="font-bold text-xl" /><p className="ps-2">Projects</p>
+                                </button>
+                                </NavLink>
+
+                                <NavLink 
                                     to="/contact"
                                 >
-                                <button className="bg-black text-white text-base font-bold  mt-4 px-3 py-2 rounded-lg shadow-xl border-2 border-slate-600 hover:bg-white hover:text-black hover:border-black flex justify-center items-center ">
+                                <button className="bg-black text-white text-base font-bold  mt-4 mx-1 px-3 py-2 rounded-lg shadow-xl border-2 border-slate-600 hover:bg-white hover:text-black hover:border-black flex justify-center items-center ">
                                     <LuMessagesSquare className="font-bold text-xl" /><p className="ps-2">Reach Out</p>
                                 </button>
                                 </NavLink>
@@ -101,6 +118,16 @@ function About(){
                             <SkillCard skillName="CSS" photoUrl={<IoLogoCss3 />} skillUrl="https://www.w3.org/Style/CSS/" />
                             <SkillCard skillName="Javascript" photoUrl={<IoLogoJavascript />} skillUrl="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
                             <SkillCard skillName="Bootstrap" photoUrl={<FaBootstrap />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="GCP" photoUrl={<SiGooglecloud />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="AWS" photoUrl={<FaAws />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="VS Code IDE" photoUrl={<VscVscodeInsiders />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="Eclips IDE" photoUrl={<DiEclipse />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="IntelliJ IDE" photoUrl={<SiIntellijidea />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="Tomcat Server" photoUrl={<SiApachetomcat />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="Python" photoUrl={<FaPython />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="C" photoUrl={<FaBootstrap />} skillUrl="https://getbootstrap.com/"/>
+                            <SkillCard skillName="C++" photoUrl={<FaBootstrap />} skillUrl="https://getbootstrap.com/"/>
+                            
                             
                         </div>
                         
